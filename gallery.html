@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - AnVee</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-placeholder {
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .gallery-caption {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="AnVee Logo">
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="creations.html">Our Creations</a></li>
+                    <li><a href="custom.html">Custom Orders</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: var(--primary-color); color: var(--light-text); padding: 3rem 0;">
+        <div class="container text-center">
+            <h1>Gallery</h1>
+            <p>A glimpse into our world of art.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons (Visual only for now) -->
+            <div class="text-center" style="margin-bottom: 2rem;">
+                <button class="btn btn-secondary" style="margin: 0.5rem;">All</button>
+                <button class="btn btn-secondary" style="margin: 0.5rem;">Traditional</button>
+                <button class="btn btn-secondary" style="margin: 0.5rem;">Spiritual</button>
+                <button class="btn btn-secondary" style="margin: 0.5rem;">Functional</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="assets/marapachi.png" alt="Marapachi Couple"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="gallery-caption">Marapachi Couple</div>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="assets/mandala.png" alt="Om Mandala"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="gallery-caption">Om Mandala</div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="assets/gond.png" alt="Tree of Life"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="gallery-caption">Tree of Life</div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Image: Coffee Painting</div>
+                    <div class="gallery-caption">Vintage Couple</div>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Image: Hand-painted Bag</div>
+                    <div class="gallery-caption">Madhubani Tote</div>
+                </div>
+                <!-- Item 6 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Image: Decoupage Box</div>
+                    <div class="gallery-caption">Floral Keepsake Box</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AnVee</h3>
+                    <p>Crafted with Love. Bringing stories to life through art.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="creations.html">Creations</a></li>
+                        <li><a href="custom.html">Custom Orders</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p><i class="fas fa-phone"></i> +91 97398 30677 (VEena)</p>
+                    <p><i class="fas fa-phone"></i> +91 95025 71096 (ANu)</p>
+                    <p><i class="fas fa-envelope"></i> veena@anvee.buzz</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AnVee. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
